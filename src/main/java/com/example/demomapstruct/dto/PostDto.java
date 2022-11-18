@@ -1,5 +1,8 @@
 package com.example.demomapstruct.dto;
 
+import java.time.Instant;
+import java.util.Map;
+import java.util.Set;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,14 +14,13 @@ import lombok.NoArgsConstructor;
 @Builder
 public class PostDto {
     private long id;
-//    private String title;
-//    private String url;
-//    private long bytes;
-//    private Boolean edited;
+    private String title;
+    private String url;
+    private long bytes;
+    private Boolean edited;
     private long likesCount;
-//    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss", timezone = "UTC")
-//    private Instant created;
-//    private Map<Object, Object> properties;
-//    private MetaInfoDto mainMeta;
-//    private Set<MetaInfoDto> metaInfos;
+    private Instant created;
+    private Map<String, String> properties;
+    private MetaInfoDto mainMeta;
+    private Set<MetaInfoDto> metaInfos;
 }
